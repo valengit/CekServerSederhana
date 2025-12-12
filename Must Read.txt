@@ -1,0 +1,24 @@
+butuh : psutil dan requests
+
+--------------------------------------------------------------------------------------------------------
+
+Konfigurasi tambahan : Buka server_check.py dan ganti kredensial di bagian KONFIGURASI EMAIL (terutama SENDER_EMAIL dan SENDER_PASSWORD menggunakan App Password Google).
+
+--------------------------------------------------------------------------------------------------------
+
+Konfigurasi Skrip PowerShell: Buka run_check.ps1 dan pastikan $PythonExecutable dan $ScriptPath menunjuk ke lokasi file yang benar.
+
+--------------------------------------------------------------------------------------------------------
+Otomasi Harian Menggunakan Task Scheduler (PowerShell)
+Skrip di-deploy menggunakan Windows Task Scheduler yang menjalankan skrip PowerShell (run_check.ps1):
+
+Task Scheduler: Buat Task baru dengan pemicu Daily (Harian).
+
+Action (Aksi): Pilih Start a program (Mulai program).
+
+Program/script: Isi dengan powershell.exe
+
+Add arguments (optional): Isi argumen lengkap untuk menjalankan file .ps1:
+
+-ExecutionPolicy Bypass -File "D:\Program\run_check.ps1"
+(Ganti jalur D:\Program dengan folder proyek Anda yang sebenarnya).
