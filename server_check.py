@@ -22,9 +22,9 @@ WEB_SERVICES = {
 # Pengaturan ini diperlukan agar skrip dapat terhubung dan login ke server email.
 SMTP_SERVER = "smtp.gmail.com"  # Contoh menggunakan Gmail
 SMTP_PORT = 587 # Port standar untuk koneksi SMTP TLS (StartTLS)
-SENDER_EMAIL = "valenkillzone@gmail.com"  # Ganti dengan email pengirim
-SENDER_PASSWORD = "viyz sple cwzo vlsm"  # Ganti dengan password aplikasi (BUKAN password email biasa!)
-RECEIVER_EMAIL = "sirokiba@gmail.com"  # Ganti dengan email penerima laporan
+SENDER_EMAIL = "email pengirim"  # Ganti dengan email pengirim
+SENDER_PASSWORD = "password google app email pengirim"  # Ganti dengan password aplikasi (BUKAN password email biasa!)
+RECEIVER_EMAIL = "email yang ingin dituju"  # Ganti dengan email penerima laporan
 
 # ----------------------------------------------------
 
@@ -220,4 +220,5 @@ def main():
 
 if __name__ == "__main__":
     # Ini memastikan bahwa fungsi main() hanya dijalankan saat skrip dieksekusi langsung
+
     main()
